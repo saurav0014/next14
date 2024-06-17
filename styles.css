@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+.parent {
+  height: 100vh;
+  width: 100%;
+  background-color: #110b2f;
+  padding: 20px 4%;
+  overflow: hidden;
+  position: relative;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.navBar > a {
+  text-decoration: none;
+  color: #b4afcd;
+}
+
+#middleSection {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  height: 85vh;
+}
+
+.middleSectionTwo{
+    max-width: 800px;
+}
+
+.newEra {
+  font-size: 30px;
+}
+.tokenLaunches {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.modularLaunch {
+  font-size: 14px;
+  color: #998ab4;
+  max-width: 400px;
+}
+.btnMoon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#moon {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  bottom: 36%;
+  left: 50%;
+}
+.sunImage {
+  position: absolute;
+  top: 35%;
+  right: 9%;
+}
+
+#earth {
+  position: absolute;
+  top: 20%;
+  left: 47%;
+  transition: transform 0.5s ease;
+}
+
+.rotate-earth {
+  transform: rotate(60deg);
+  transition: transform 0.5s ease-in-out; 
+}
+
+.btnOne {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #525df4;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+.btnTwo {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  border: 3px solid #525df4;
+  background-color: transparent;
+}
+
+#buttomSection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 12%;
+}
+
+.iconContainer {
+  display: flex;
+}
+
+.IconAndText {
+  width: 100px;
+  display: flex;
+  background-color: #16143a;
+  border-radius: 20px;
+  justify-content: space-around;
+  padding: 5px 0px;
+  color: white;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.rotate {
+  animation: rotateAnimation 2s linear forwards;
+}
+
+.hide {
+  display: none;
+}
+
+.sunImage.rotate {
+  position: absolute;
+  top: 18%;
+  left: 60%;
+}
+
+
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+

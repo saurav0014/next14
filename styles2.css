@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #110b2f;
+  display: flex;
+  flex-direction: column;
+  animation-name: main;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-timing-function: forwards;
+}
+
+.inner-inner {
+  width: 90%;
+  height: 60%;
+}
+.main-inner-inner h1 {
+  color: #97b8fe;
+  font-size: 2.5dvh;
+}
+.main-inner-inner h2 {
+  color: white;
+  font-size: 4.5dvh;
+}
+.main-inner-inner p {
+  color: #998ab4;
+  font-size: 2dvh;
+}
+.moon:hover {
+  cursor: pointer;
+}
+.pics {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+}
+.main-inner-inner {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  opacity: 0;
+}
+.launchbtn {
+  position: absolute;
+  left: 80%;
+  z-index: 4;
+  bottom: 45%;
+  opacity: 0;
+}
+.title {
+  height: 7dvh;
+  width: 20dvw;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  position: absolute;
+  z-index: 4;
+}
+.loading-bar {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 4;
+  width: 20%;
+  height: 1%;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.loading-white {
+  border-radius: 50px;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  z-index: 4;
+}
+.loading-pink {
+  border-radius: 50px;
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  background-color: #b5a4fb;
+  z-index: 5;
+}
+.earth {
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.moon {
+  height: 10%;
+  width: 5%;
+  top: 20%;
+  position: fixed;
+  right: 25%;
+  z-index: 14;
+}
+.sun {
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  z-index: 0;
+  height: 60%;
+  width: 60%;
+}
+.scroll {
+  position: absolute;
+  z-index: 5;
+  left: 85%;
+  top: 90%;
+  opacity: 0;
+}
+.navbar-wrapper {
+  opacity: 0;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navimg {
+  height: 50%;
+  width: 15%;
+}
+.nav-options {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.5dvh;
+  color: #b4afcd;
+}
+
+.desc-wrapper {
+  opacity: 0;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  z-index: 5;
+}
+.desc-inner {
+  width: 85%;
+
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.desc-inner h1 {
+  color: white;
+  font-size: 3dvh;
+  font-weight: 100;
+}
+.desc-inner h2 {
+  color: white;
+  font-size: 5dvh;
+  font-weight: 800;
+}
+.desc-inner p1 {
+  color: #998ab4;
+  font-size: 2dvh;
+  font-weight: 100;
+}
+.desc {
+  height: 50%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.buttons {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+.buttons button {
+  height: 60%;
+  width: 30%;
+  border: 1px solid;
+  font-size: 2dvh;
+  color: white;
+  cursor: pointer;
+}
+.buttons button:nth-child(1) {
+  background: linear-gradient(90deg, #775bfb 0%, #275fec 100%);
+  border: 0px;
+  border-radius: 10px;
+}
+.buttons button:nth-child(2) {
+  background: none;
+  border: 2px solid #1f59d1;
+  border-radius: 10px;
+}
+.socials-wrapper {
+  height: 30%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+.socials-inner {
+  width: 85%;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.socials {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials p1 {
+  color: white;
+  font-size: 2dvh;
+}
+.socials-btn {
+  height: 30%;
+  width: 20%;
+  background-color: #16143a;
+  border-radius: 20px;
+  display: flex;
+  color: #99b9ff;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-img {
+  height: 50%;
+}
+
+.loading-pink {
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.earth {
+  animation-name: earth;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.sun {
+  animation-name: sun;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.moon {
+  animation-name: moon;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.navbar-wrapper {
+  animation-name: navbar;
+  animation-delay: 4s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.desc-wrapper {
+  animation-name: desc;
+  animation-delay: 6s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.scroll {
+  animation-name: scroll;
+  animation-delay: 6s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.title {
+  animation-name: title;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.loading-bar {
+  animation-name: loading-bar;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.socials-wrapper {
+  animation-name: socials;
+  animation-delay: 6s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes earth {
+  0% {
+    left: 0%;
+    top: 0%;
+  }
+  100% {
+    left: 50%;
+    top: 20%;
+  }
+}
+@keyframes e {
+  0% {
+    left: 50%;
+    top: 20%;
+  }
+
+  100% {
+    left: 35%;
+    top: -0%;
+    transform: rotate(-90deg);
+  }
+}
+@keyframes sun {
+  0% {
+    left: 30%;
+    top: 0%;
+  }
+  100% {
+    left: 40%;
+    top: 40%;
+  }
+}
+.moon.animate {
+  animation-name: m;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes m {
+  0% {
+    right: 40%;
+    top: 60%;
+  }
+  100% {
+    right: 38%;
+    top: 45%;
+  }
+}
+@keyframes moon {
+  0% {
+    right: 25%;
+    top: 20%;
+  }
+  100% {
+    right: 40%;
+    top: 60%;
+  }
+}
+@keyframes navbar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes desc {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes title {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading-bar {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes socials {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav-options p {
+  cursor: pointer;
+}
